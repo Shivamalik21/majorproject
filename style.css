@@ -18,35 +18,40 @@ body{
     height: 110vh;
     padding-top: 60px;
     z-index: -1;
-    margin-top: -80px;
+   
     
+}
+#s:hover{
+    cursor: pointer;
+    color: #14bf98;
+}
+.nav button:hover{
+    color: white;
 }
 .nav{
     display: flex;
     color:var(--white);
     align-items: center;
-   
+ 
+ height: 80px;
     z-index: +2;
-margin-top: 60px;
+
 position: sticky;
 top:0px;
-  
-}
-@media screen {
-    
+justify-content: space-between;
+
+  background-color: #153e52;
 }
 
-.nav:hover{
-    cursor: pointer;
-    
-    color: green;
-}    
+
+
+
 .list{
    
     display: flex;
     align-items: center;
-   gap: 30px;
-   margin-left: 42vw;
+  column-gap: 20px;
+  
    list-style: none;
   
 }
@@ -83,6 +88,9 @@ h1{
     height: 80vh;
    
     width: 100%;
+}
+ .section1 img:hover{
+    transform: scale(1.15);
 }
 .section_div1{
     display: flex;
@@ -365,7 +373,7 @@ ol{
 .footer1 form{
    color: var(--white);
     height: 50vh;
-   
+  
    
    
 }
@@ -435,16 +443,26 @@ ol{
 }
 form{
   width: 30vw;
-   
+  
     row-gap: 3vh;
    
     display: flex;
     flex-direction: column;
 }
-  form input{
+  form input {
     height: 9vh;
-  
+   
 }
+form select{
+    height: 9vh;
+}
+.d input,select{
+    background-color: #153e52;
+    border: 1px solid rgb(146, 146, 146);
+    color: white;
+}
+
+    
 
 .f7 ul ,p{
     margin-top: 2vw;
@@ -473,3 +491,68 @@ button:hover{
     background-color: #14bf98;
     border: none;
 }
+.f1  button{
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+   
+    border: none;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+    
+
+.social button{
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    border: none;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+  
+  .nav button{
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    border: none;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+  .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+   
+  
+  }
+  .text {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 160px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+.overlay:hover {
+    cursor: pointer;
+    opacity: 1;
+   
+  }
+  #y:hover img{
+    transform: scale(1.15);
+    transition-timing-function: ease;
+  }
